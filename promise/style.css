@@ -1,0 +1,30 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 150px;
+  height: auto;
+}
+li {
+  list-style: none;
+}
+
+div.img_wrapper {
+  /* 画像と同じ横幅にする */
+  width: 150px;
+  overflow: hidden;
+  margin: 100px auto 0;
+}
+ul.img_lists {
+  display: flex;
+  justify-content: center;
+  transition: 0.4s;
+  transform: translate3d(0px, 0px, 0);
+}
+li.img_list {
+  font-size: 0;
+  transition: 0.4s;
+  /* transform: translate3d(0px, 0px, 0); */
+}

@@ -4,7 +4,7 @@
   padding: 0;
 }
 img {
-  width: 150px;
+  width: 600px;
   height: auto;
 }
 li {
@@ -13,18 +13,32 @@ li {
 
 div.img_wrapper {
   /* 画像と同じ横幅にする */
-  width: 150px;
+  width: 600px;
   overflow: hidden;
   margin: 100px auto 0;
 }
 ul.img_lists {
   display: flex;
   justify-content: center;
-  transition: 0.4s;
+  transition: 0.5s;
   transform: translate3d(0px, 0px, 0);
 }
 li.img_list {
   font-size: 0;
-  transition: 0.4s;
+  transition: 0.5s;
   /* transform: translate3d(0px, 0px, 0); */
+}
+
+div.btn_wrapper {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+button.btn {
+  appearance: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
 }

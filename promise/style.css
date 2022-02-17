@@ -6,6 +6,9 @@
 img {
   width: 600px;
   height: auto;
+  /* 画像カクつき防止 */
+  /* -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; */
 }
 li {
   list-style: none;

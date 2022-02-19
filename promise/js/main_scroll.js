@@ -34,7 +34,7 @@
         // ここに左方向の処理
         console.log('左');
         // 画像スクロール
-        console.log(1);
+        // console.log(1);
         // ▼左回転
         for (let i = 0; i < li.length; i++) {
           li[i].style.transition = '0.5s'
@@ -45,7 +45,7 @@
         return new Promise((resolve) => {
           setTimeout(
             () => {
-              console.log(2);
+              // console.log(2);
               let val = 'translate3d(' + 0 + 'px, ' + 0 + 'px, ' + 0 + ')';
               for (let i = 0; i < li.length; i++) {
                 li[i].style.transition = 'none';
@@ -70,7 +70,7 @@
         // ここに左方向の処理
         console.log('右');
         // 画像スクロール
-        console.log(1);
+        // console.log(1);
         // ▼右回転
         let val = val_right;
         for (let i = 0; i < li.length; i++) {
@@ -82,7 +82,7 @@
         return new Promise((resolve) => {
           setTimeout(
             () => {
-              console.log(2);
+              // console.log(2);
               let val = 'translate3d(' + 0 + 'px, ' + 0 + 'px, ' + 0 + ')';
               for (let i = 0; i < li.length; i++) {
                 li[i].style.transition = 'none';

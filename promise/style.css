@@ -30,6 +30,7 @@ li.img_list {
   font-size: 0;
   transition: 0.5s;
   /* transform: translate3d(0px, 0px, 0); */
+  cursor: pointer;
 }
 
 div.btn_wrapper {

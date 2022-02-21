@@ -32,29 +32,29 @@
     if (left_click_count >= 1 && !(common_right === "")) {
       next = common_right;
       // 左側クリックカウントを初期化しておく
-      console.log("next_in_if → " + next);
+      // console.log("next_in_if → " + next);
       left_click_count = 0;
       common_right = 0;
     }
     next++;
-    console.log("next_a → " + next);
+    // console.log("next_a → " + next);
     if (next >= count) {
       // nextがcount以上の値となった場合の処理
       nabBtn[count - 1].classList.toggle('current');
       nabBtn[0].classList.toggle('current');
       next = 0;
-      console.log("next初期化されたよ")
+      // console.log("next初期化されたよ")
     } else {
       // nextがcount未満の値の時の処理
-      console.log('next_hoge', next);
+      // console.log('next_hoge', next);
       nabBtn[next].classList.toggle('current');
       nabBtn[next - 1].classList.toggle('current');
-      console.log("next罪挙がってるよ " + next)
+      // console.log("next罪挙がってるよ " + next)
     }
 
-    console.log("next_b → " + next);
+    // console.log("next_b → " + next);
     common_left = next;
-    console.log("common_left_under → " + common_left);
+    // console.log("common_left_under → " + common_left);
   }
   function left() {
     // 左ボタンを連続で何回押しているかのチェック
@@ -64,36 +64,36 @@
     if (right_click_count >= 1 && !(common_left === "")) {
       prev = common_left;
       // 右側クリックカウントを初期化しておく
-      console.log("prev_in_if → " + prev);
+      // console.log("prev_in_if → " + prev);
       right_click_count = 0;
       common_left = 0;
     }
     prev--;
-    console.log("prev_a → " + prev);
+    // console.log("prev_a → " + prev);
     if (prev < 0) {
       // prevが0未満の場合の処理
       prev = count - 1;
       nabBtn[prev].classList.toggle('current');
       nabBtn[0].classList.toggle('current');
 
-      console.log("prev初期化されたよ")
+      // console.log("prev初期化されたよ")
     } else if (prev === 4) {
       // prevが0以上の時の処理
-      console.log('prev_hoge', prev);
+      // console.log('prev_hoge', prev);
       nabBtn[prev].classList.toggle('current');
       nabBtn[0].classList.toggle('current');
-      console.log("next罪挙がってるよ " + prev)
+      // console.log("next罪挙がってるよ " + prev)
     } else {
       // prevが0以上の時の処理
-      console.log('prev_hoge', prev);
+      // console.log('prev_hoge', prev);
       nabBtn[prev].classList.toggle('current');
       nabBtn[prev + 1].classList.toggle('current');
-      console.log("next罪挙がってるよ " + prev)
+      // console.log("next罪挙がってるよ " + prev)
     }
 
-    console.log("prev_b → " + prev);
+    // console.log("prev_b → " + prev);
     common_right = prev;
-    console.log("common_right_under → " + common_right);
+    // console.log("common_right_under → " + common_right);
   }
 
   right_btn.addEventListener('click', () => { right(); });
